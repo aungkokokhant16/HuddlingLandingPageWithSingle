@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+$font-family-sans-serif: 'Open Sans','Poppins', sans-serif;
+$headings-font-family:        'Poppins', sans-serif;
+$primary: hsl(257, 40%, 49%);
+$secondary: hsl(300, 69%, 71%);
+$warning: #fff;
+$utilities: (
+        "width": (
+                property: width,
+                class: w,
+                values: (
+                        10: 15%,
+                        50: 40%,
+                        75: 75%,
+                        100: 100%,
+                        auto: auto
+                )
+        )
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-image: url("../images/bg-desktop.svg");
+  background-color: $secondary;
+  background-color: $primary;
+}
+.two:hover{
+  background: $secondary;
+  color: white;
+  border: 0;
+}
+
+.two{
+  color: $secondary;
+}
+
+i {
+
+  border-radius: 100%;
+  border: 2px solid white;
+  padding: 10px;
+
+}
+
+i:hover{
+  border: 2px solid $secondary;
+  color: $secondary;
+  background: $secondary;
+}
+
+@media screen and (min-width: 375px) {
+body {
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: $secondary;
+  background-color: $primary;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
