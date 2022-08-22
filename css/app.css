@@ -10760,12 +10760,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-image: url("../images/bg-desktop.svg");
-  background-color: hsl(300deg, 69%, 71%);
-  background-color: hsl(257deg, 40%, 49%);
-}
-
 .two:hover {
   background: hsl(300deg, 69%, 71%);
   color: white;
@@ -10785,13 +10779,23 @@ i {
 i:hover {
   border: 2px solid hsl(300deg, 69%, 71%);
   color: hsl(300deg, 69%, 71%);
-  background: hsl(300deg, 69%, 71%);
+}
+
+.fa-brands:hover {
+  color: hsl(300deg, 69%, 71%) !important;
 }
 
 @media screen and (min-width: 375px) {
   body {
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
+    background-color: hsl(300deg, 69%, 71%);
+    background-color: hsl(257deg, 40%, 49%);
+  }
+}
+@media screen and (max-width: 1440px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
     background-color: hsl(300deg, 69%, 71%);
     background-color: hsl(257deg, 40%, 49%);
   }

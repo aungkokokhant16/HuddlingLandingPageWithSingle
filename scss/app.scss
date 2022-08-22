@@ -21,11 +21,7 @@ $utilities: (
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-body {
-  background-image: url("../images/bg-desktop.svg");
-  background-color: $secondary;
-  background-color: $primary;
-}
+
 .two:hover{
   background: $secondary;
   color: white;
@@ -44,10 +40,14 @@ i {
 
 }
 
-i:hover{
+i:hover {
   border: 2px solid $secondary;
   color: $secondary;
-  background: $secondary;
+
+}
+
+.fa-brands:hover{
+  color: $secondary !important;
 }
 
 @media screen and (min-width: 375px) {
@@ -57,6 +57,14 @@ body {
   background-color: $secondary;
   background-color: $primary;
 }
+}
+
+@media screen and (max-width: 1440px){
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-color: $secondary;
+    background-color: $primary;
+  }
 }
 
 
